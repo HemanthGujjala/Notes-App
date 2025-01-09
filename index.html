@@ -10,49 +10,16 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Password Generator</title>
+    <title>Notes App</title>
   </head>
   <body>
-    <div class="container">
-      <h2>Password Generator</h2>
-      <div class="result-container">
-        <span id="result"></span>
-        <button class="btn" id="clipboard">
-          <i class="far fa-copy"></i>
-        </button>
-      </div>
-      <div class="settings">
-        <div class="setting">
-          <label for="length">Password Length</label>
-          <input
-            type="number"
-            name="length"
-            id="length"
-            min="4"
-            max="20"
-            value="20"
-          />
-        </div>
-        <div class="setting">
-          <label for="uppercase">Include uppercase letters</label>
-          <input type="checkbox" name="uppercase" id="uppercase" checked />
-        </div>
-        <div class="setting">
-          <label for="lowercase">Include lowercase letters</label>
-          <input type="checkbox" name="lowercase" id="lowercase" checked />
-        </div>
-        <div class="setting">
-          <label for="numbers">Include numbers</label>
-          <input type="checkbox" name="numbers" id="numbers" checked />
-        </div>
-        <div class="setting">
-          <label for="symbols">Include symbols</label>
-          <input type="checkbox" name="symbols" id="symbols" checked />
-        </div>
-      </div>
-      <button class="btn btn-large" id="generate">Generate Password</button>
-    </div>
+    <button class="add" id="add"><i class="fas fa-plus"></i> Add note</button>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.2.7/marked.min.js"
+      integrity="sha512-Sl04EWeJ0QgILm83WoubQbZqh71aWLJP8xnswnKSBI37S+ZtrWVtSHmd1YaYYdC1g9PWN1siY7KO2jU3HtCVHA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
